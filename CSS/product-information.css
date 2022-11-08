@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-body { 
+body {
     height: 2300px;
     text-align: center;
     animation: newanimation 8s infinite;
@@ -11,11 +11,25 @@ body {
 }
 
 @keyframes newanimation {
-    0% {background-color: orange;}
-    25% {background-color: gray;}
-    50% {background-color: orange;}
-    75% {background-color: gray;}
-    100% {background-color: orange;}
+    0% {
+        background-color: orange;
+    }
+
+    25% {
+        background-color: gray;
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    75% {
+        background-color: gray;
+    }
+
+    100% {
+        background-color: orange;
+    }
 }
 
 .backToProducts {
@@ -27,7 +41,7 @@ body {
     text-decoration: underline;
 }
 
-.backToProducts:hover{
+.backToProducts:hover {
     color: yellow;
 }
 
@@ -37,7 +51,7 @@ body {
     height: 50px;
 }
 
-.pageHeading > h1 {
+.pageHeading>h1 {
     margin-left: 580px;
     margin-top: -5px;
     color: #fff;
@@ -66,7 +80,10 @@ body {
     text-align: center;
 }
 
-table, th, td, tr {
+table,
+th,
+td,
+tr {
     border: solid yellow;
     text-align: center;
 }

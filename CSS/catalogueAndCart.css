@@ -4,32 +4,46 @@
 }
 
 
-#catalogueBody{
+#catalogueBody {
     animation: newanimation 8s infinite;
     text-align: center;
 }
 
 
-#shoppingCartBody{
+#shoppingCartBody {
     height: 2200px;
 }
 
 
 @keyframes newanimation {
-    0% {background-color: orangered;}
-    25% {background-color: rgba(255, 0, 0, 0.5);}
-    50% {background-color: orange;}
-    75% {background-color:  rgba(255, 0, 0, 0.5);}
-    100% {background-color: orangered;}
+    0% {
+        background-color: orangered;
+    }
+
+    25% {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    75% {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    100% {
+        background-color: orangered;
+    }
 }
 
 
-.headerSection{
+.headerSection {
     background-color: lightblue;
     position: relative;
 }
 
-.headerSectionMainHeadingBox{
+.headerSectionMainHeadingBox {
     border: solid black;
     width: 500px;
     margin-left: auto;
@@ -39,23 +53,23 @@
     position: relative;
 }
 
-.headerSectionMainHeadingBox > h1 {
+.headerSectionMainHeadingBox>h1 {
     position: absolute;
     left: 65px;
     margin-bottom: 10px;
 }
 
-.headerSection > div > nav {
+.headerSection>div>nav {
     display: flex;
 }
 
-.headerSection > div > nav > ul{
+.headerSection>div>nav>ul {
     position: absolute;
     right: 20px;
     top: 12px
 }
 
-.headerSection > div > nav > ul > li {
+.headerSection>div>nav>ul>li {
     list-style: none;
     display: inline-block;
     padding: 5px;
@@ -63,7 +77,7 @@
     text-align: center;
 }
 
-.headerSection > div > nav > ul > li > a {
+.headerSection>div>nav>ul>li>a {
     padding: 10px;
     color: #fff;
     font-size: 20px;
@@ -72,7 +86,7 @@
 
 ion-icon {
     position: relative;
-    right:7px;
+    right: 7px;
     top: 2px;
 }
 
@@ -84,7 +98,7 @@ ion-icon {
 }
 
 
-.saleHeading > h1{
+.saleHeading>h1 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -95,17 +109,17 @@ ion-icon {
     background: black;
 }
 
-.row > div > h4 {
+.row>div>h4 {
     text-align: center;
     color: gray;
 }
 
-.row > div {
+.row>div {
     margin-bottom: 30px;
 }
 
 
-.row >div > a > img {
+.row>div>a>img {
     padding: 10px;
 }
 
@@ -119,17 +133,18 @@ ion-icon {
 }
 
 
-.img-thumbnail:hover{
+.img-thumbnail:hover {
     opacity: 50%;
 }
 
 
 span {
     float: right;
-    color: black;font-size: 1rem;
+    color: black;
+    font-size: 1rem;
 }
 
-.backToHome{
+.backToHome {
     font-size: 2rem;
     float: right;
     margin-right: 10px;
@@ -139,31 +154,31 @@ span {
     color: #fff;
 }
 
-.backToHome:hover{
+.backToHome:hover {
     color: yellow;
 }
 
-form{
+form {
     background: lightgray;
     padding-left: 10px;
     margin-bottom: 20px;
     border: solid black;
 }
 
-.formHeading{
+.formHeading {
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: red;
 }
 
-.submitButtonContainer{
+.submitButtonContainer {
     margin-left: 185px;
     margin-bottom: 10px;
 }
 
 
-.submit-button{
+.submit-button {
     background: #fff;
     color: black;
     border: solid red;
@@ -171,39 +186,42 @@ form{
     padding: 10px;
 }
 
-.submit-button:hover{
+.submit-button:hover {
     background: black;
     color: #fff;
     border: solid #fff;
 }
 
 
-.row{
+.row {
     padding: 15px;
 }
 
 
-.row > div > a > img:hover{
+.row>div>a>img:hover {
     transform: scale(1.1);
     transition: 1s ease-in;
 }
 
 
-thead > tr > th {
+thead>tr>th {
     background: black;
     color: yellow;
 }
 
-table, th, td, tr {
+table,
+th,
+td,
+tr {
     border: solid yellow;
     text-align: center;
 }
 
-.tableContainer > table > tbody > tr > td {
+.tableContainer>table>tbody>tr>td {
     border: solid yellow;
 }
 
-.tableContainer > table > thead > tr > th {
+.tableContainer>table>thead>tr>th {
     border: solid yellow;
 }
 
@@ -212,14 +230,14 @@ table, th, td, tr {
 }
 
 
-.containerForCartProducts{
+.containerForCartProducts {
     max-width: 800px;
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 55px;
 }
 
-.containerForCartProductsHeadingContainer{
+.containerForCartProductsHeadingContainer {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -228,29 +246,29 @@ table, th, td, tr {
     border-bottom: 3px solid black;
 }
 
-.containerForCartProductsHeadingContainer-item{
+.containerForCartProductsHeadingContainer-item {
     width: 45%;
 }
 
-.containerForCartProductsHeadingContainer-price{
+.containerForCartProductsHeadingContainer-price {
     width: 15%;
     display: flex;
     align-items: center;
 }
 
-.containerForCartProductsHeadingContainer-quantity{
+.containerForCartProductsHeadingContainer-quantity {
     width: 30%;
     display: flex;
     align-items: center;
 }
 
-.containerForCartProductsHeadingContainer-cost{
+.containerForCartProductsHeadingContainer-cost {
     width: 10%;
     display: flex;
     align-items: center;
 }
 
-.chosenProduct{
+.chosenProduct {
     width: 45%;
     display: flex;
     align-items: center;
@@ -264,20 +282,20 @@ table, th, td, tr {
 }
 
 
-.customerProductsContainer{
+.customerProductsContainer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.customerProductsContainer img{
+.customerProductsContainer img {
     width: 75px;
     height: 75px;
     border: solid yellow;
     object-fit: cover;
 }
 
-.totalCostContainer{
+.totalCostContainer {
     display: flex;
     justify-content: flex-end;
     padding: 10px 0;
@@ -285,15 +303,15 @@ table, th, td, tr {
     border-top: solid black;
 }
 
-.totalCostOfCartTitle{
+.totalCostOfCartTitle {
     width: 15%;
 }
 
-.totalCostOfCart{
+.totalCostOfCart {
     width: 10%;
 }
 
-.chosenProductQuantity{
+.chosenProductQuantity {
     margin-left: 90px;
     margin-top: 35px;
     width: 60px;
@@ -305,28 +323,28 @@ table, th, td, tr {
     cursor: pointer;
 }
 
-.totalCost{
+.totalCost {
     margin-left: 140px;
     margin-top: 35px;
     font-size: 15px;
 }
 
-.chosenProductPrice{
+.chosenProductPrice {
     margin-top: 35px;
 }
 
-.chosenProductTitleSpan{
+.chosenProductTitleSpan {
     max-width: 130px;
     text-align: center;
 }
 
-.chosenProductQuantitySpan{
+.chosenProductQuantitySpan {
     margin-right: 15px;
     margin-bottom: 10px;
 }
 
 
-.confirmOrderContainer{
+.confirmOrderContainer {
     width: 200px;
     text-align: center;
     margin-left: auto;
@@ -341,9 +359,10 @@ table, th, td, tr {
 }
 
 
-.showndHideButtonContainerHeading{
+.showndHideButtonContainerHeading {
     border: solid black;
-    background-color: rgba(0, 174, 255, 0.247);;
+    background-color: rgba(0, 174, 255, 0.247);
+    ;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -351,7 +370,7 @@ table, th, td, tr {
     text-align: center;
 }
 
-.showndHideButtonContainer{
+.showndHideButtonContainer {
     border-radius: 5px;
     width: 160px;
     margin-top: 30px;
@@ -362,7 +381,8 @@ table, th, td, tr {
     justify-content: space-between;
 }
 
-.hideFormsButton, .showFormsButton{
+.hideFormsButton,
+.showFormsButton {
     width: 70px;
     border-radius: 5px;
     cursor: pointer;
@@ -371,7 +391,7 @@ table, th, td, tr {
 }
 
 
-.animateButtonContainer{
+.animateButtonContainer {
     width: 600px;
     height: 1px;
     padding-top: 80px;
@@ -381,7 +401,8 @@ table, th, td, tr {
     text-align: center;
 }
 
-.animateButton, .reverseAnimation{
+.animateButton,
+.reverseAnimation {
     border-radius: 5px;
     background-color: black;
     color: #fff;
@@ -389,7 +410,9 @@ table, th, td, tr {
     width: 150px;
 }
 
-.discountCouponContainer, .collectionOrDeliveryContainer, .deliveryOptionsContainer{
+.discountCouponContainer,
+.collectionOrDeliveryContainer,
+.deliveryOptionsContainer {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -397,7 +420,9 @@ table, th, td, tr {
     text-align: center;
 }
 
-.couponForm, .collectionOrDeliveryForm, .deliveryOptionForm{
+.couponForm,
+.collectionOrDeliveryForm,
+.deliveryOptionForm {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -405,44 +430,48 @@ table, th, td, tr {
     padding-top: 5px;
 }
 
-.collectionContainer{
+.collectionContainer {
     width: 120px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.deliveryContainer{
+.deliveryContainer {
     width: 120px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#collectionLabel{
+#collectionLabel {
     position: relative;
     left: 6px;
 }
 
-#deliveryInput{
+#deliveryInput {
     position: relative;
     right: 6px;
 }
 
-.discountCouponSection,.collectionOrDeliverySection, .deliveryOptionsSection{
-    background-color: rgba(0, 174, 255, 0.247);;
+.discountCouponSection,
+.collectionOrDeliverySection,
+.deliveryOptionsSection {
+    background-color: rgba(0, 174, 255, 0.247);
+    ;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.deliveryOptionsSection{
+.deliveryOptionsSection {
     margin-top: 200px;
     margin-bottom: 50px;
 }
 
 
-.dropDownNaviagtionMenuSection{
+.dropDownNaviagtionMenuSection {
     border: solid black;
-    background-color: rgba(0, 174, 255, 0.247);;
+    background-color: rgba(0, 174, 255, 0.247);
+    ;
     width: 500px;
     text-align: center;
     margin-left: auto;
@@ -450,7 +479,8 @@ table, th, td, tr {
     margin-bottom: 30px;
 }
 
-.dropDownNaviagtionMenuSectionButton, .dropDownNaviagtionMenuSectionHideButton{
+.dropDownNaviagtionMenuSectionButton,
+.dropDownNaviagtionMenuSectionHideButton {
     cursor: pointer;
     border-radius: 5px;
     background-color: black;
@@ -458,17 +488,19 @@ table, th, td, tr {
     margin-bottom: 10px;
 }
 
-.dropDownNaviagtionMenuUnorderedList{
+.dropDownNaviagtionMenuUnorderedList {
     list-style: none;
     display: none;
 }
 
-.dropDownNaviagtionMenuUnorderedList > li > a {
+.dropDownNaviagtionMenuUnorderedList>li>a {
     color: #fff;
 }
 
 
-#discountFormSubmitButton, #collectionOrDeliveryFormSubmitButton, #deliveryOptionsSubmitButton {
+#discountFormSubmitButton,
+#collectionOrDeliveryFormSubmitButton,
+#deliveryOptionsSubmitButton {
     margin-left: 280px;
     margin-bottom: 10px;
     border-radius: 5px;
