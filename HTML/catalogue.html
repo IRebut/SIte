@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Bootstrap 4 to the webpage -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/catalogueAndCart.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <title>catalogue Page</title>
+</head>
+
+<body id="catalogueBody" onload="displayCurrentTotal()">
+
+
+    <header class="headerSection">
+        <div>
+            <nav>
+                <div class="headerSectionMainHeadingBox">
+                    <h1>Добро пожаловать</h1>
+                </div>
+                <ul>
+                    <li><a href="./index.html"><em>Главная</em></a></li>
+                    <li class="cart"><a href="./cart.html">
+                            <ion-icon name="basket"></ion-icon>Корзина<span class="amountOfItems">0</span>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="saleHeading">
+        <h1><em>Скидка 50% от указанной цены на ВСЕ товары!!</em></h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Nike Дизайнерская кепка (унисекс)</h4>
+                <a href="./product-information.html#product1"><img class="img-thumbnail img-responsive"
+                        src="../images/Caps/Nike-cap.jpg" alt="Nike cap"></a>
+                <p><em>Дизайнерская кепка Nike, выпущенная ограниченным тиражом.</em> <span> Код: #1</span> <br>
+                    $399
+                </p>
+                <a class="addToCart firstCartProduct" href="#">В корзину</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Женская Дизайнерская Шляпа</h4>
+                <a href="./product-information.html#product2"><img class="img-thumbnail img-responsive"
+                        src="../images/Caps/ladies-designer-hat.jpg" alt="ladies designer hat"></a>
+                <p><em>
+                    Летняя женская шляпка от дизайнера. </em> <span> Код: #2</span> <br>
+                    $299
+                </p>
+                <a class="addToCart secondCartProduct" href="#">В корзину</a>
+
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4> Женские дизайнерские кепки</h4>
+                <a href="./product-information.html#product3"><img class="img-thumbnail img-responsive"
+                        src="../images/Caps/ladies-designer-hat-2.jpg" alt="ladies-designer-hat-2"></a>
+                <p><em>Женская дизайнерская кепка по индивидуальному заказу </em> <span> Код: #3</span> <br>
+                    $399
+                </p>
+                <a class="addToCart thirdCartProduct" href="#">В корзину</a>
+
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Джерси</h4>
+                <a href="./product-information.html#product4"><img class="img-thumbnail img-responsive"
+                        src="../images/T-shirts/Football-jersey.jpg" alt="Football jersey"></a>
+                <p><em>Бразильское футбольное джерси </em> <span> Код: #4</span> <br>
+                    $999
+                </p>
+                <a class="addToCart fourthCartProduct" href="#">В корзину</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Простые футболки</h4>
+                <a href="./product-information.html#product5"><img id="plain__tshirts"
+                        class="img-thumbnail img-responsive" src="../images/T-shirts/Plain-Ts.jpg"
+                        alt="plain t-shirts"></a>
+                <p><em>Женские и мужские простые футболки
+                </em> <span> Код: #5</span>  <br>
+                    $299
+                </p>
+                <a class="addToCart fifthCartProduct" href="#">В корзину</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Женское  Джерси</h4>
+                <a href="./product-information.html#product6"><img class="img-thumbnail img-responsive"
+                        src="../images/T-shirts/ladies-designer-jerseys.jpg" alt="Ladies designer jersey"></a>
+                <p><em>Женское дизайнерское джерси </em> <span> Код: #6</span> <br>
+                    $799
+                </p>
+                <a class="addToCart sixthCartProduct" href="#">В корзину</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Замшевые кроссовки</h4>
+                <a href="./product-information.html#product7"><img id="blue_suade" class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Blue-swade.jpg" alt="Blue suade shoes"></a>
+                <p><em>Дизайнерские кроссовки для мужчин </em> <span> Код: #7</span> <br>
+                    $1299
+                </p>
+                <a class="addToCart seventhCartProduct" href="#">В корзину</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Эксклюзив от Nike</h4>
+                <a href="./product-information.html#product8"><img class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Designer-Nikes.jpg" alt="Designer-Nike-shoes"></a>
+                <p><em>Мужские кроссовки Nike ограниченной серии
+                </em> <span> Код: #8</span> <br>
+                    $2999
+                </p>
+                <a class="addToCart eighthCartProduct" href="#">В корзину</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Дизайнерская обувь Nike</h4>
+                <a href="./product-information.html#product9"><img class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Designer-shoes.jpg" alt="Designer-shoes"></a>
+                <p><em>
+                    Мужская и женская дизайнерская обувь Nike </em> <span> Код: #9</span> <br>
+                    $1599
+                </p>
+                <a class="addToCart ninethCartProduct" href="#">В корзину</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Nike Airforce кроссовки</h4>
+                <a href="./product-information.html#product10"><img class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Nike-airforce.jpg" alt="Nike-Airforce-shoes"></a>
+                <p><em>Мужские и женские Nike Airforce</em> <span> Код: #10</span><br>
+                    $2999
+                </p>
+                <a class="addToCart tenthCartProduct" href="#">В корзину</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Nike кроссовки</h4>
+                <a href="./product-information.html#product11"><img id="Nike__trainers"
+                        class="img-thumbnail img-responsive" src="../images/Shoes/Nike-trainers.jpg"
+                        alt="Nike-training-shoes"></a>
+                <p><em>Мужские тренировочные кроссовки от Nike  </em> <span> Код: #11</span> <br>
+                    $1999
+                </p>
+                <a class="addToCart eleventhCartProduct" href="#">В корзину</a>
+            </div>
+            <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded">
+                <h4>Salomon Trail Running Shoes</h4>
+                <a href="./product-information.html#product12"><img class="img-thumbnail img-responsive"
+                        src="../images/Shoes/Salomons.jpg" alt="Soloman-shoes"></a>
+                <p><em> Кроссовки Salomon Trail
+                    Salomon trail </em> <span> Код: #12</span> <br>
+                    $3999
+                </p>
+                <a class="addToCart twelthCartProduct" href="#">В корзину</a>
+            </div>
+        </div>
+
+
+        <form class="rounded">
+
+            <div class="formHeading">
+                <h1><em>Ваши контакты:</em></h1>
+            </div>
+
+            <div class="form-group row">
+                <label for="firstName" class="col-sm-2 col-form-label">Имя:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="firstName" placeholder="Имя">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastName" class="col-sm-2 col-form-label">Фамилия:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="lastName" placeholder="Фамилия">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="customerMessage" class="col-sm-2 col-form-label">Комментарий:</label>
+                <div class="col-sm-4">
+                    <textarea class="form-control" id="customerMessage" rows="5"
+                        placeholder="Расскажите, что вы думаете о нашей продукции..."></textarea>
+                </div>
+            </div>
+            <div class="submitButtonContainer">
+                <button type="submit" class="btn btn-primary submit-button">отправить</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="../JavaScript/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>

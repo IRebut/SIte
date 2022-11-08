@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    height: 2300px;
+    text-align: center;
+    animation: newanimation 8s infinite;
+    text-align: center;
+}
+
+@keyframes newanimation {
+    0% {background-color: orange;}
+    25% {background-color: gray;}
+    50% {background-color: orange;}
+    75% {background-color: gray;}
+    100% {background-color: orange;}
+}
+
+.backToProducts {
+    float: right;
+    margin-right: 15px;
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.backToProducts:hover{
+    color: yellow;
+}
+
+.pageHeading {
+    border: solid yellow;
+    background: black;
+    height: 50px;
+}
+
+.pageHeading > h1 {
+    margin-left: 580px;
+    margin-top: -5px;
+    color: #fff;
+}
+
+.productInfoContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+#green {
+    color: green;
+}
+
+.productIdNumber {
+    color: blue;
+    text-align: center;
+}
+
+table, th, td, tr {
+    border: solid yellow;
+    text-align: center;
+}
+
+th {
+    color: yellow;
+    background: black;
+}

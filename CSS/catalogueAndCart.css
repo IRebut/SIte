@@ -1,0 +1,479 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+#catalogueBody{
+    animation: newanimation 8s infinite;
+    text-align: center;
+}
+
+
+#shoppingCartBody{
+    height: 2200px;
+}
+
+
+@keyframes newanimation {
+    0% {background-color: orangered;}
+    25% {background-color: rgba(255, 0, 0, 0.5);}
+    50% {background-color: orange;}
+    75% {background-color:  rgba(255, 0, 0, 0.5);}
+    100% {background-color: orangered;}
+}
+
+
+.headerSection{
+    background-color: lightblue;
+    position: relative;
+}
+
+.headerSectionMainHeadingBox{
+    border: solid black;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    background-color: rgba(0, 174, 255, 0.247);
+    position: relative;
+}
+
+.headerSectionMainHeadingBox > h1 {
+    position: absolute;
+    left: 65px;
+    margin-bottom: 10px;
+}
+
+.headerSection > div > nav {
+    display: flex;
+}
+
+.headerSection > div > nav > ul{
+    position: absolute;
+    right: 20px;
+    top: 12px
+}
+
+.headerSection > div > nav > ul > li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    background-color: black;
+    text-align: center;
+}
+
+.headerSection > div > nav > ul > li > a {
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+ion-icon {
+    position: relative;
+    right:7px;
+    top: 2px;
+}
+
+.amountOfItems {
+    position: relative;
+    bottom: 0.5px;
+    right: 2px;
+    font-size: 20px;
+}
+
+
+.saleHeading > h1{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    color: yellow;
+    background: black;
+}
+
+.row > div > h4 {
+    text-align: center;
+    color: gray;
+}
+
+.row > div {
+    margin-bottom: 30px;
+}
+
+
+.row >div > a > img {
+    padding: 10px;
+}
+
+
+
+.img-thumbnail {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+.img-thumbnail:hover{
+    opacity: 50%;
+}
+
+
+span {
+    float: right;
+    color: black;font-size: 1rem;
+}
+
+.backToHome{
+    font-size: 2rem;
+    float: right;
+    margin-right: 10px;
+    margin-left: -90px;
+    padding: 4px;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.backToHome:hover{
+    color: yellow;
+}
+
+form{
+    background: lightgray;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: solid black;
+}
+
+.formHeading{
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: red;
+}
+
+.submitButtonContainer{
+    margin-left: 185px;
+    margin-bottom: 10px;
+}
+
+
+.submit-button{
+    background: #fff;
+    color: black;
+    border: solid red;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.submit-button:hover{
+    background: black;
+    color: #fff;
+    border: solid #fff;
+}
+
+
+.row{
+    padding: 15px;
+}
+
+
+.row > div > a > img:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in;
+}
+
+
+thead > tr > th {
+    background: black;
+    color: yellow;
+}
+
+table, th, td, tr {
+    border: solid yellow;
+    text-align: center;
+}
+
+.tableContainer > table > tbody > tr > td {
+    border: solid yellow;
+}
+
+.tableContainer > table > thead > tr > th {
+    border: solid yellow;
+}
+
+.tableContainer {
+    background-color: #fff;
+}
+
+
+.containerForCartProducts{
+    max-width: 800px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.containerForCartProductsHeadingContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 800px;
+    border-bottom: 3px solid black;
+}
+
+.containerForCartProductsHeadingContainer-item{
+    width: 45%;
+}
+
+.containerForCartProductsHeadingContainer-price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.containerForCartProductsHeadingContainer-quantity{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.containerForCartProductsHeadingContainer-cost{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.chosenProduct{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+
+.chosenProduct ion-icon {
+    cursor: pointer;
+}
+
+
+.customerProductsContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.customerProductsContainer img{
+    width: 75px;
+    height: 75px;
+    border: solid yellow;
+    object-fit: cover;
+}
+
+.totalCostContainer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    width: 100%;
+    border-top: solid black;
+}
+
+.totalCostOfCartTitle{
+    width: 15%;
+}
+
+.totalCostOfCart{
+    width: 10%;
+}
+
+.chosenProductQuantity{
+    margin-left: 90px;
+    margin-top: 35px;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chosenProductQuantity ion-icon {
+    cursor: pointer;
+}
+
+.totalCost{
+    margin-left: 140px;
+    margin-top: 35px;
+    font-size: 15px;
+}
+
+.chosenProductPrice{
+    margin-top: 35px;
+}
+
+.chosenProductTitleSpan{
+    max-width: 130px;
+    text-align: center;
+}
+
+.chosenProductQuantitySpan{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+
+.confirmOrderContainer{
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirmOrderContainer button {
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.showndHideButtonContainerHeading{
+    border: solid black;
+    background-color: rgba(0, 174, 255, 0.247);;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.showndHideButtonContainer{
+    border-radius: 5px;
+    width: 160px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hideFormsButton, .showFormsButton{
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+}
+
+
+.animateButtonContainer{
+    width: 600px;
+    height: 1px;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.animateButton, .reverseAnimation{
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+}
+
+.discountCouponContainer, .collectionOrDeliveryContainer, .deliveryOptionsContainer{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.couponForm, .collectionOrDeliveryForm, .deliveryOptionForm{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.collectionContainer{
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deliveryContainer{
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#collectionLabel{
+    position: relative;
+    left: 6px;
+}
+
+#deliveryInput{
+    position: relative;
+    right: 6px;
+}
+
+.discountCouponSection,.collectionOrDeliverySection, .deliveryOptionsSection{
+    background-color: rgba(0, 174, 255, 0.247);;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deliveryOptionsSection{
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+
+.dropDownNaviagtionMenuSection{
+    border: solid black;
+    background-color: rgba(0, 174, 255, 0.247);;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.dropDownNaviagtionMenuSectionButton, .dropDownNaviagtionMenuSectionHideButton{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.dropDownNaviagtionMenuUnorderedList{
+    list-style: none;
+    display: none;
+}
+
+.dropDownNaviagtionMenuUnorderedList > li > a {
+    color: #fff;
+}
+
+
+#discountFormSubmitButton, #collectionOrDeliveryFormSubmitButton, #deliveryOptionsSubmitButton {
+    margin-left: 280px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 60px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}

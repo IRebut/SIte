@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/catalogueAndCart.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <title>Страница каталога</title>
+</head>
+
+<body id="shoppingCartBody">
+
+    <header class="headerSection">
+        <div>
+            <nav>
+                <div class="headerSectionMainHeadingBox">
+                    <h1>Корзина</h1>
+                </div>
+                <ul>
+                    <li><a href="./index.html"><em>Главная</em></a></li>
+                    <li class="cart"><a href="./cart.html">
+                            <ion-icon name="basket"></ion-icon>Корзина<span class="amountOfItems">0</span>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="containerForCartProducts">
+            <div class="containerForCartProductsHeadingContainer">
+                <h4 class="containerForCartProductsHeadingContainer-item">Вещь</h4>
+                <h4 class="containerForCartProductsHeadingContainer-price">Цена</h4>
+                <h4 class="containerForCartProductsHeadingContainer-quantity">Количество</h4>
+                <h4 class="containerForCartProductsHeadingContainer-cost">Стоимость без НДС</h4>
+            </div>
+
+            <div class="customerProductsContainer">
+
+            </div>
+
+        </div>
+    </section>
+
+    <h5 class="showndHideButtonContainerHeading"><em>Кнопки ниже можно использовать, чтобы скрыть или развернуть формы.</em></h5>
+
+    <div class="showndHideButtonContainer">
+        <button class="hideFormsButton">Скрыть</button>
+        <button class="showFormsButton">Показать</button>
+    </div>
+
+    <section class="discountCouponSection">
+        <div class="discountCouponContainer">
+            <h3>Купон на скидку</h3>
+            <p>Если вы хотите использовать купон на скидку, введите код ниже.</p>
+        </div>
+        <form class="couponForm">
+            <label name="coupon">Введите код:</label>
+            <input id="couponInput" type="text" name="coupon" placeholder="Введите код купона...">
+        </form>
+
+        <button id="discountFormSubmitButton" onclick="couponCodes()">Принять</button>
+
+    </section>
+
+
+    <section class="collectionOrDeliverySection">
+        <div class="collectionOrDeliveryContainer">
+            <h3> Выбор  доставки</h3>
+            <p>Выберите удобный вариант:</p>
+        </div>
+        <form class="collectionOrDeliveryForm">
+            <div class="collectionContainer">
+                <input type="radio" name="collectionOrDeliveryOption" value="collection">
+                <label for="collection" id="collectionLabel">Самовывоз</label>
+            </div>
+            <div class="deliveryContainer">
+                <input type="radio" name="collectionOrDeliveryOption" id="deliveryInput" value="delivery">
+                <label for="delivery">Доставка</label>
+            </div>
+        </form>
+        <div>
+            <button id="collectionOrDeliveryFormSubmitButton">Принять</button>
+        </div>
+    </section>
+    <section class="deliveryOptionsSection">
+        <div class="deliveryOptionsContainer">
+            <h3>Выбор доставки</h3>
+            <p>Пожалуйста, выберите вариант доставки из формы ниже</p>
+        </div>
+        <form class="deliveryOptionForm">
+            <div>
+                <input id="localExpress" type="radio" name="delivery" value="expressLocal">
+                <label for="expressLocal">Экспресс доставка день в день - 30$</label>
+            </div>
+            <div>
+                <input id="internationalExpress" type="radio" name="delivery" value="expressInternational">
+                <label for="expressInternational">Экспресс доставка на следующий день - 15$</label>
+            </div>
+            <div>
+                <input type="radio" name="delivery" value="normalDeliveryLocal">
+                <label for="normalDeliveryLocal">Стандартная доставка (3 дня) без доп.оплаты</label>
+            </div>
+            <div>
+                <input type="radio" name="delivery" value="normalDeliveryInternational">
+                <label for="normalDeliveryInternational">
+                    Обычная международная доставка (10 дней) без доп. оплаты</label>
+            </div>
+        </form>
+        <div>
+            <button id="deliveryOptionsSubmitButton" onclick="deliveryCost()">Принять</button>
+        </div>
+    </section>
+
+    <section class="dropDownNaviagtionMenuSection">
+        <h5 class="dropDownNaviagtionMenuSectionHeading">Меню быстрой навигации.</h5>
+        <button class="dropDownNaviagtionMenuSectionButton">Меню</button>
+        <div class="dropDownNaviagtionMenuContainer">
+            <ul class="dropDownNaviagtionMenuUnorderedList">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./catalogue.html">Каталог</a></li>
+                <li><a href="./product-information.html">Информация о продукте</a></li>
+                <li><a href="./customer-experience.html">Опыт работы с клиентами и доставка</a></li>
+                <li><a href="./contact.html">Свяжитесь а нами</a></li>
+            </ul>
+            <button class="dropDownNaviagtionMenuSectionHideButton">Скрыть меню</button>
+        </div>
+    </section>
+
+
+    <div class="confirmOrderContainer">
+        <button id="confirmOrderButton">Подтвердите заказ
+        </button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../JavaScript/script.js"></script> 
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
